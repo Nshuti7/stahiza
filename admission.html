@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form - STAHIZA</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00d2a015dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="STAHIZA Logo" class="logo">
+            <div class="school-name">
+                <h1>Standard High School Zzana</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admission.html" class="active">Admission</a></li>
+                <li><a href="login.html">Staff Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container main-content">
+        <h2>Student Admission Application</h2>
+        <p>Please fill in the form below to apply for admission.</p>
+
+        <form id="admissionForm" class="admission-form">
+            <div class="form-section">
+                <h3>Student Information</h3>
+                <div class="form-group">
+                    <label for="studentName">Full Name *</label>
+                    <input type="text" id="studentName" placeholder="e.g. John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="e.g. john@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Gender *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Guardian Information</h3>
+                <div class="form-group">
+                    <label for="guardianName">Parent/Guardian Name *</label>
+                    <input type="text" id="guardianName" placeholder="e.g. Jane Doe">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Academic Details</h3>
+                <div class="form-group">
+                    <label for="admissionClass">Apply for Class *</label>
+                    <select id="admissionClass">
+                        <option value="">-- Select Class --</option>
+                        <option value="S1">Senior One (S1)</option>
+                        <option value="S2">Senior Two (S2)</option>
+                        <option value="S3">Senior Three (S3)</option>
+                        <option value="S4">Senior Four (S4)</option>
+                        <option value="S5">Senior Five (S5)</option>
+                        <option value="S6">Senior Six (S6)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Areas of Interest</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interest" value="Sciences"> Sciences</label>
+                        <label><input type="checkbox" name="interest" value="Arts"> Arts</label>
+                        <label><input type="checkbox" name="interest" value="Sports"> Sports</label>
+                        <label><input type="checkbox" name="interest" value="Music/Drama"> Music & Drama</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="admissionError" class="error-message"></div>
+            <div id="admissionSuccess" class="success-message"></div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn">Submit Application</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Detailed Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-school"></i> STAHIZA</h3>
+                <p>Education is the Way.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                    <li><a href="admission.html"><i class="fa-solid fa-angle-right"></i> Admission</a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-angle-right"></i> Staff Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Zzana, Entebbe Road, Kampala</p>
+                <p><i class="fa-solid fa-phone"></i> +256 700 123456</p>
+                <p><i class="fa-solid fa-envelope"></i> info@stahiza.sc.ug</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Standard High School Zzana. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

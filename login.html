@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login - STAHIZA</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00d2a015dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+    <header>
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="STAHIZA Logo" class="logo">
+            <div class="school-name">
+                <h1>Standard High School Zzana</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="login.html" class="active">Staff Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="login-wrapper">
+        <div class="auth-box">
+            <h2>Head Teacher Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <div id="loginError" class="error-message"></div>
+                <button type="submit" class="btn btn-full btn-primary" style="margin-top: 20px;">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-school"></i> STAHIZA</h3>
+                <p>Education is the Way.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                    <li><a href="admission.html"><i class="fa-solid fa-angle-right"></i> Admission</a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-angle-right"></i> Staff Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Zzana, Entebbe Road, Kampala</p>
+                <p><i class="fa-solid fa-phone"></i> +256 700 123456</p>
+                <p><i class="fa-solid fa-envelope"></i> info@stahiza.sc.ug</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Standard High School Zzana. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
